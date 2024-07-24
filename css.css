@@ -1,0 +1,234 @@
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl;
+    text-align: right;
+    font-family: 'Cairo', sans-serif;
+}
+
+.navbar {
+    background-color: transparent; /* خلفية شفافة عند ظهور الفيديو */
+    transition: background-color 0.5s ease; /* تأثير الانتقال */
+}
+
+/* نمط شريط التنقل عند التمرير */
+.navbar-scrolled {
+    background-color: #ffffff; /* لون الخلفية الأبيض */
+    color: #000000; /* لون الكتابة الأسود */
+}
+
+/* تغيير لون النصوص والأيقونات */
+.navbar-scrolled .navbar-nav .nav-link  
+{
+    color: #000000 !important; /* لون النصوص الأسود */
+}
+.navbar-scrolled .navbar-brand  
+{
+    color: #000000 !important; /* لون النصوص الأسود */
+}
+.navbar-scrolled .nav-item .btn
+{
+
+    color: #000000 !important; /* لون النصوص الأسود */
+}
+
+.video-header {
+    position: relative;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+}
+
+.video-header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('vi/natural\ 2.mp4') no-repeat;
+    background-size: cover;
+}
+
+.video-header .container {
+    position: relative;
+    z-index: 2;
+}
+
+.video-header .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0.5;
+    z-index: 1;
+}
+video{
+    width: 1098px;
+}
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+    margin-right: 30px;
+}
+.navbar-brand {
+    color: white !important;
+}
+.navbar .btn {
+    color: white !important;
+}
+a:hover{
+    color:rgb(146, 144, 144)
+}
+.search{
+    margin-top: 300px;
+}
+.service-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transition: transform 0.3s ease;
+}
+.service-box:hover {
+    background-color: #f8f9fa;
+    transform: scale(0.9);
+}
+.service-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+
+}
+.service-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    
+}
+.service-box a{
+    color: #000;
+}
+
+.link-box {
+    border-bottom: 3px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: border-bottom 0.3s, color 0.3s;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.link-box:hover {
+    color: #7a7a7a;
+    border-bottom: 4px solid #474747 !important;
+}
+.collapse-container {
+    margin-top: 20px;
+}
+.card-body {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+    background-color: #474747;
+    border-color: #474747;
+    transition: background-color 0.3s, border-color 0.3s;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+}
+.btn-primary:hover {
+    background-color: #7a7a7a;
+    border-color: #7a7a7a;
+
+}
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+.form-control:focus {
+    border-color: #7a7a7a;
+    box-shadow: none;
+}
+.custom-section {
+    margin: 20px 0;
+}
+.custom-icon {
+    font-size: 2rem;
+}
+.custom-card {
+    margin-bottom: 20px;
+}
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    width: 300px;
+}
+.image-carousel img {
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 768px) {
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        font-size: 10px;
+        width: 300px;
+    
+    }
+}
+.card-body a {
+    text-decoration: none;
+    color: #000;
+}
+.card-body a:hover {
+    text-decoration: underline;
+}
+body {
+    background-color: #f8f9fa; /* رمادي فاتح */
+  }
+  .card-header {
+    background-color: #6c757d; /* رمادي غامق */
+    color: white;
+    border-radius: 10px;
+  }
+  .btn-link {
+    color: white;
+    outline: none;
+    border: #6c757d;
+  }
+  .btn-link:focus {
+    outline: none;
+  
+  }
+  .btn-link:hover {
+    color: #f8f9fa;
+
+  }
+  
